@@ -1,3 +1,108 @@
+""" while True
+total = 0
+dinheiro = 0
+while True:
+    idade = input('Informe sua idade: ')
+    if idade == 'sair':
+        break
+    idade = int(idade)
+    total += 1
+    if idade < 3:
+        ingresso = 0
+    else:
+        if idade > 12:
+            ingresso = 30
+        else:
+            ingresso = 15
+    dinheiro += ingresso
+media = dinheiro / total
+print('Total de pessoas: {}'.format(total))
+print('Total arrecadado: R$ {}'.format(dinheiro))
+print('Média arrecadada: R$ {} por pessoa'.format(media))"""
+""" repetição com cédulas
+valor = float(input('Digite o valor em R$: '))
+while True:
+    if valor >= 100:
+        cedulas_100 = valor // 100
+        valor -= cedulas_100 * 100
+        print('Cédulas de 100: {}'.format(cedulas_100))
+        if not valor:
+            break
+    if valor >= 50:
+        cedulas_50 = valor // 50
+        valor -= cedulas_50 * 50
+        print('Cédulas de 50: {}'.format(cedulas_50))
+        if not valor:
+            break
+    if valor >= 20:
+        cedulas_20 = valor // 20
+        valor -= cedulas_100 * 20
+        print('Cédulas de 20: {}'.format(cedulas_20))
+        if not valor:
+            break
+    if valor >= 10:
+        cedulas_10 = valor // 10
+        valor -= cedulas_10 * 10
+        print('Cédulas de 10: {}'.format(cedulas_10))
+        if not valor:
+            break
+    if valor >= 5:
+        cedulas_5 = valor // 5
+        valor -= cedulas_5 * 5
+        print('Cédulas de 5: {}'.format(cedulas_5))
+        if not valor:
+            break
+    if valor:
+        cedulas_1 = valor
+        print('Cédulas de 1: {}'.format(cedulas_1))
+        break"""
+""" calculadora
+print('CALCULADORA')
+print('+ Adição')
+print('- Subtração')
+print('* Multiplicação')
+print('/ Divisão')
+print('Pressione "s" para sair')
+while True:
+    op = str(input('Qual operação deseja fazer? '))
+    if (op == '+' or op == '-' or op == '*' or op == '/'):
+        x = float(input('Digite o primeiro valor: '))
+        y = float(input('Digite o segundo valor: '))
+
+    if (op == '+'):
+        res = x + y
+        print('Resultado: {} + {} = {}'.format(x, y, res))
+        continue
+    elif (op == '-'):
+        res = x - y
+        print('Resultado: {} - {} = {}'.format(x, y, res))
+        continue
+    elif (op == '*'):
+        res = x * y
+        print('Resultado: {} * {} = {}'.format(x, y, res))
+        continue
+    elif (op == '/'):
+        res = x / y
+        print('Resultado: {} / {} = {}'.format(x, y, res))
+        continue
+    elif (op == 's'):
+        break
+    else:
+        print('Operação inválida!')
+print('Programa encerrado...')"""
+"""i = 0
+while (i < 10 and i != 9):
+    print(i)
+    i += 2
+for i in range(0, 10, 2):
+    print(i)"""
+"""for i in range(0, 13, 1):
+    print(i)
+i = 0
+while (i < 10):
+    print(i)
+    i += 1
+"""
 """ while/ for/ for and while
 #2 while
 tabuada = 1
